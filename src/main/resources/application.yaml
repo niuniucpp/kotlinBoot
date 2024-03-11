@@ -1,2 +1,12 @@
 server:
   port: 8000
+  servlet:
+    context-path: /
+#配置数据库信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.92.131:3306/kotlinstu?useUnicode=true&amp&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
