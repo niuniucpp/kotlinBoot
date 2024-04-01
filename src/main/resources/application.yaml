@@ -4,6 +4,8 @@ server:
     context-path: /
 #配置数据库信息
 spring:
+  main:
+    allow-circular-references: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.92.131:3306/kotlinstu?useUnicode=true&amp&characterEncoding=utf-8&serverTimezone=GMT%2B8
